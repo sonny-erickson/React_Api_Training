@@ -1,0 +1,106 @@
+body {
+  background: red;
+  height: 100%;
+}
+.App {
+  background: green;
+}
+.cont {
+  background: yellow;
+}
+.left {
+ /*background: url("./img/co.jpeg") fixed 80% 40%;*/
+ background: pink;
+
+  height: 170px;
+}
+.right {
+  background: orange;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Générals infos */
+h2 {
+  color: white;
+  font-size: 30px;
+  border-bottom: 1px solid white;
+  font-family: cursive, serif;
+}
+.generalResult {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.pG p,
+.countryInfo p {
+  color: white;
+  font-family: cursive, serif;
+}
+.pG span,
+.countryInfo span {
+  color: #f16051;
+  margin-left: 5px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.select {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+label {
+  color: white;
+  font-size: 25px;
+}
+/* results */
+.flag,
+.countryInfo {
+  margin-top: 40px;
+}
+
+.flag img {
+  width: 150px;
+  height: auto;
+  align-items: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+    margin: auto;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 1000px) {
+  .App{
+    display: flex;
+    justify-content: center;
+  }
+  .cont{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url('./img/co.jpeg');
+  }
+  .right{
+    width: 60%
+  }
+  .left{
+    width: 40%;
+
+  }
+}
