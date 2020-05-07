@@ -47,7 +47,7 @@ import './App.css';
     return (
       <div className='App'>
         <div className='cont'>
-          <div className="left bg-danger">
+          <div className="left">
           <Illustration />
           </div>
           <div className="right bg-dark">
