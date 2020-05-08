@@ -4,7 +4,7 @@ const form = (props) => {
     return (
         <div >
             <h2 className="mb-2">Your country</h2> 
-            <form  className="container"  onSubmit={props.handleSubmit}>
+            <form  className="container mt-5"  onSubmit={props.handleSubmit}>
                 <div className="formm ">
                     <div className="selectForm d-flex justify-content-center flex-column ">
                        <label htmlFor="exampleFormControlSelect1" >Select your country</label>

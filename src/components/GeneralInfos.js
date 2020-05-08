@@ -37,7 +37,7 @@ class generalInfos extends Component {
                     {this.state.loading || !this.state.NewConfirmed || !this.state.TotalConfirmed ?
                     (<div><p>Loading ....</p></div>) :
                     (
-                    <div className='text-center'>
+                    <div className='text-center mt-5'>
                         <p>New confirmed: <span>{this.state.NewConfirmed}</span></p>
                         <p>Total confirmed: <span>{this.state.TotalConfirmed}</span></p>
                         <p>New deaths: <span>{this.state.NewDeaths}</span></p>

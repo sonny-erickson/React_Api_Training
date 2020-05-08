@@ -2,7 +2,7 @@ import React from 'react';
 
 const result = (props) => {
     return (
-        <div>
+        <div className="mt-5">
             
             {props.loading ?
                     (<div><p></p></div>) :
