@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../styled/Button';
-
+//https://www.youtube.com/watch?v=17AwVXg5lHk -> Styled-components button
 const form = (props) => {
     
     return (
@@ -14,13 +14,13 @@ const form = (props) => {
                         <select className="select form-control " value={props.value} onChange={props.handleChange}>
                             <option name="country" value='1'>USA</option>
                             <option name="country" value='2'>Spain</option>
-                            <option name="country" value='3'>Italy</option>
+                            <option name="country" value='3'>Russia</option>
                             <option name="country" value='4'>UK</option>
-                            <option name="country" value='5'>Russia</option>
+                            <option name="country" value='5'>Italy</option>
                             <option name="country" value='6'>France</option>
                             <option name="country" value='7'>Germany</option>
-                            <option name="country" value='8'>Turkey</option>
-                            <option name="country" value='9'>Brazil</option>
+                            <option name="country" value='8'>Brazil</option>
+                            <option name="country" value='9'>Turkey</option>
                             
                         </select> 
                     </div>

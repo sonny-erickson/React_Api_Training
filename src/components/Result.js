@@ -9,7 +9,6 @@ const result = (props) => {
                     (
                     <div className='d-flex row mb-3'>
                         <div className='countryInfo col-lg-6 col-md-8 col-sm-12 mt-1'>
-                        {props.NewConfirmed && <p>New confirmed: <span>{props.NewConfirmed}</span></p>}
                         {props.TotalConfirmed && <p>Total confirmed <span>{props.TotalConfirmed}</span></p>}
                         {props.NewDeaths && <p>New deaths: <span>{props.NewDeaths}</span></p>}
                         {props.TotalDeaths && <p>Total deaths: <span>{props.TotalDeaths}</span></p>}
