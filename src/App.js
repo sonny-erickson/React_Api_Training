@@ -3,7 +3,6 @@ import Form from'./components/Form';
 import Illustration from'./components/Illustration';
 import Result from'./components/Result';
 import GeneralInfo from'./components/GeneralInfos';
-//import coSvg from './img/coSvg.svg'
 import './App.css';
 
 
@@ -19,6 +18,7 @@ import './App.css';
       TotalRecovered:  undefined,
       Flag :undefined
     }
+    
     handleChange = (e) =>{
       
       this.setState({value: e.target.value })
@@ -44,6 +44,7 @@ import './App.css';
     }
  
   render() {
+    
     return (
       <div className='App'>
         <div className='cont'>

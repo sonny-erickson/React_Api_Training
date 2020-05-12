@@ -1,6 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
+import Button from '../styled/Button';
 
 const form = (props) => {
+    
     return (
         <div >
             <h2 className="mb-2">Your country</h2> 
@@ -22,7 +25,8 @@ const form = (props) => {
                         </select> 
                     </div>
                     
-                    <button className='btn btn-danger btn-md'>Submit</button>
+                    
+                    <Button>Submit</Button>
                 </div>
             </form>
                 
