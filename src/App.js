@@ -5,7 +5,6 @@ import Result from'./components/Result';
 import GeneralInfo from'./components/GeneralInfos';
 import './App.css';
 
-
   class App extends Component {
     state = {
       value: ["1"],
@@ -20,14 +19,12 @@ import './App.css';
     }
     
     handleChange = (e) =>{
-      
       this.setState({value: e.target.value })
     }
+
     handleSubmit = async(e) => {
       e.preventDefault();
       const valueOption = [this.state.value];
-      
-      
       const apiCall = await fetch(`https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search`);
       const data = await apiCall.json();
       this.setState({
@@ -38,13 +35,10 @@ import './App.css';
          TotalDeaths: data.data.rows[valueOption].total_deaths,
          TotalRecovered:data.data.rows[valueOption].total_recovered,
         Flag : data.data.rows[valueOption].flag
-
       })
-    
     }
  
-  render() {
-    
+  render() { 
     return (
       <div className='App'>
         <div className='cont'>
@@ -64,13 +58,11 @@ import './App.css';
              TotalRecovered={this.state.TotalRecovered}
              Flag={this.state.Flag}
             />         
-
           </div>
         </div>
       </div>
     )
   }
 }
-
 
 export default App;

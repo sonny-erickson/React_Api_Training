@@ -12,11 +12,9 @@ class generalInfos extends Component {
         LastMaj:null
     }
     componentDidMount = async() => {
-
         const url = "https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search";
         const response = await fetch(url);
         const dataG = await response.json();
-
         this.setState({
            loading:false,// si c'est à true c'est que ça charge encore mais ici ça a trouvé...
             LastMaj : dataG.data.last_update,
@@ -25,7 +23,6 @@ class generalInfos extends Component {
             NewDeaths: dataG.data.rows[0].new_deaths,
             TotalDeaths: dataG.data.rows[0].total_deaths,
             TotalRecovered:dataG.data.rows[0].total_recovered
-
          })
       }
 
@@ -44,24 +41,13 @@ class generalInfos extends Component {
                         <p>Total deaths:<span> {this.state.TotalDeaths}</span></p>
                         <p>Total recovered: <span>{this.state.TotalRecovered}</span></p>
                         <p>Last update :<span>{this.state.LastMaj}</span></p>
-
                     </div>
-
                     )}
                     <img src={coro} alt='logo' className="app-logo"></img>
-
                 </div>
-
-
-
-
-
-
             </div>
         );
-
     }
-
 };
 
 export default generalInfos;

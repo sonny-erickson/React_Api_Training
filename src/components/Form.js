@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Button from '../styled/Button';
 //https://www.youtube.com/watch?v=17AwVXg5lHk -> Styled-components button
 const form = (props) => {
@@ -17,15 +16,12 @@ const form = (props) => {
                             <option name="country" value='3'>Russia</option>
                             <option name="country" value='4'>UK</option>
                             <option name="country" value='5'>Italy</option>
-                            <option name="country" value='6'>France</option>
-                            <option name="country" value='7'>Germany</option>
-                            <option name="country" value='8'>Brazil</option>
+                            <option name="country" value='6'>Brazil</option>
+                            <option name="country" value='7'>France</option>
+                            <option name="country" value='8'>Germany</option>
                             <option name="country" value='9'>Turkey</option>
-                            
                         </select> 
                     </div>
-                    
-                    
                     <Button>Submit</Button>
                 </div>
             </form>
