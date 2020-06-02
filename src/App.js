@@ -26,7 +26,7 @@ import './App.css';
     handleSubmit = async(e) => {
       e.preventDefault();
       const valueOption = [this.state.value];
-      console.log(valueOption);
+      
       
       const apiCall = await fetch(`https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search`);
       const data = await apiCall.json();
